@@ -1,0 +1,122 @@
+@-moz-document url-prefix("https://nportal.ntut.edu.tw/index.do?") {
+#divLoginPageBulletin,
+.header,
+#sliderShow,
+#wrap table,
+.copyright {
+    display: none;
+}
+
+#wrap {
+    display: flex;
+    background-image: none;
+    margin: 0;
+    width: 100%;
+    height: 100%;
+    left: 0;
+    right: 0;
+    justify-content: center;
+    /* Center horizontally */
+    align-items: center;
+    /* Center vertically */
+}
+
+#authImage {
+    border-radius: 6px;
+    box-shadow: 0.5px 0.5px 10px rgba(114, 114, 114, 0.288);
+}
+
+#eyes {
+    opacity: 0;
+}
+
+.boxContent {
+    display: block;
+    margin: 0;
+    border-radius: 20px;
+    background-color: rgba(255, 255, 255, 0.945);
+    padding: 40px;
+    backdrop-filter: blur(4px);
+    animation: move-shadow 3s infinite running alternate-reverse;
+}
+
+@keyframes move-shadow {
+    0% {
+        box-shadow: 4px 0 15px rgba(255, 255, 255, 0.589);
+    }
+    25% {
+        box-shadow: -4px 0 15px rgba(255, 255, 255, 0.589);
+    }
+    50% {
+        box-shadow: 4px 4px 15px rgba(255, 255, 255, 0.589);
+    }
+    75% {
+        box-shadow: 0 -4px 15px rgba(255, 255, 255, 0.589);
+    }
+    100% {
+        box-shadow: -4px 4px 15px rgba(255, 255, 255, 0.589);
+    }
+}
+
+@keyframes blink-shadow {
+    0% {
+        box-shadow: 5px 5px 10px rgba(170, 170, 170, 0.743);
+    }
+    100% {
+        box-shadow: 5px 5px 10px rgb(255, 255, 255);
+    }
+}
+
+.boxContent > img {
+    display: none;
+}
+
+.form::before {
+    content: "Student Portal";
+    font-size: 24px;
+    font-weight: bold;
+}
+
+.tundra {
+    margin: 0;
+    padding: 0;
+    background-image: url(https://wiki.debian.org/DebianArt/Themes/desert-moonrise?action=AttachFile&do=get&target=wallpaper.svg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-color: #00001f;
+}
+
+.co {
+    font-weight: bold;
+    margin: 1em;
+}
+
+.l_icon01 {
+    width: 100%;
+    background-color: #863b13;
+    transition-delay: 200ms;
+    transition-duration: 300ms;
+    animation: blink-shadow 600ms infinite alternate;
+}
+
+.l_icon01:hover {
+    background-color: #520c0c;
+    transition-duration: 300ms;
+}
+
+.loginBtn {
+    margin: 1em 0;
+}
+
+.authcode a:nth-of-type(2) img {
+    display: none;
+}
+
+input[type="text"],
+input[type="password"] {
+    width: 178px;
+    box-shadow: 0.5px 0.5px 10px rgba(218, 218, 218, 0.288);
+}
+}
