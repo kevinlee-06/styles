@@ -5,7 +5,7 @@
 @author         Kevin Lee
 ==/UserStyle== */
 
-@-moz-document url-prefix("https://nportal.ntut.edu.tw/index.do?") {
+@-moz-document url-prefix("https://nportal.ntut.edu.tw/index.do") {
     #divLoginPageBulletin,
     .header,
     #sliderShow,
